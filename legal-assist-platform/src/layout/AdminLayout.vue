@@ -30,7 +30,6 @@ const activeMenu = computed(() => {
 })
 
 const activeNavTab = computed(() => activeMenu.value)
-const breadcrumbs = computed(() => route.meta.breadcrumb || ['首页'])
 
 function navigate(path) {
   router.push(path)
@@ -70,7 +69,7 @@ function navigate(path) {
     </el-aside>
 
     <el-container class="admin-main-wrap">
-      <el-header class="admin-header" height="64px">
+      <el-header class="admin-header" height="56px">
         <div class="header-left">
           <nav class="header-nav">
             <router-link
@@ -83,11 +82,6 @@ function navigate(path) {
               {{ tab.title }}
             </router-link>
           </nav>
-          <el-breadcrumb separator="/" class="header-breadcrumb">
-            <el-breadcrumb-item v-for="(item, i) in breadcrumbs" :key="i">
-              {{ item }}
-            </el-breadcrumb-item>
-          </el-breadcrumb>
         </div>
         <div class="header-right">
           <el-badge :value="3" :max="9" class="notify-badge">
@@ -222,8 +216,7 @@ function navigate(path) {
 
 .header-left {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  align-items: center;
   min-width: 0;
 }
 
@@ -251,13 +244,6 @@ function navigate(path) {
     color: $color-primary;
     font-weight: 600;
     background: rgba(26, 75, 140, 0.1);
-  }
-}
-
-.header-breadcrumb {
-  :deep(.el-breadcrumb__inner) {
-    font-size: 12px;
-    color: #94a3b8;
   }
 }
 
