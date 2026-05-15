@@ -1,0 +1,49 @@
+@use './variables.scss' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  color: $color-text;
+  background: $color-bg;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --el-color-primary: #{$color-primary};
+  --el-color-primary-light-3: #{lighten($color-primary, 12%)};
+  --el-color-primary-light-5: #{lighten($color-primary, 22%)};
+  --el-color-primary-light-7: #{lighten($color-primary, 32%)};
+  --el-color-primary-light-8: #{lighten($color-primary, 38%)};
+  --el-color-primary-light-9: #{lighten($color-primary, 44%)};
+  --el-color-primary-dark-2: #{$color-primary-dark};
+}
+
+.page-card {
+  background: $color-bg-card;
+  border-radius: 8px;
+  border: 1px solid $color-border;
+  box-shadow: 0 1px 3px rgba(15, 45, 84, 0.06);
+}
+
+.page-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}

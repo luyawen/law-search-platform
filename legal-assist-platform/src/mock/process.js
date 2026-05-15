@@ -1,0 +1,68 @@
+export const processList = [
+  {
+    id: 'P-01',
+    order: 1,
+    name: '风险辨识与评估',
+    description: '组织各部门识别危险有害因素，完成风险分级与管控措施清单编制。',
+    standard: '符合双重预防机制建设要求，重大风险已落实管控责任人。',
+    reference: '《安全生产法》第四十一条',
+  },
+  {
+    id: 'P-02',
+    order: 2,
+    name: '安全教育培训',
+    description: '新入职、转岗、复工人员完成三级安全教育；特种作业人员持证上岗。',
+    standard: '培训记录完整，考核合格后方可上岗，特种作业证在有效期内。',
+    reference: '《生产经营单位安全培训规定》',
+  },
+  {
+    id: 'P-03',
+    order: 3,
+    name: '隐患排查治理',
+    description: '按计划开展日常、专项、综合隐患排查，重大隐患挂牌督办并闭环验收。',
+    standard: '隐患台账齐全，整改措施、资金、时限、预案、责任五落实。',
+    reference: '《安全生产法》第四十一条',
+  },
+  {
+    id: 'P-04',
+    order: 4,
+    name: '应急演练',
+    description: '每年至少组织一次综合或专项应急演练，现场处置方案每半年演练一次。',
+    standard: '演练有方案、有记录、有评估、有改进措施。',
+    reference: '《生产安全事故应急条例》',
+  },
+  {
+    id: 'P-05',
+    order: 5,
+    name: '特种设备检查',
+    description: '在用特种设备按期检验，安全附件校验有效，运行记录完整。',
+    standard: '检验报告在有效期内，无超期未检设备。',
+    reference: '《特种设备安全监察条例》',
+  },
+  {
+    id: 'P-06',
+    order: 6,
+    name: '承包商安全管理',
+    description: '外来施工单位资质审查、安全协议签订、入厂安全教育及作业过程监督。',
+    standard: '资质齐全，协议明确双方安全责任，现场有专人监护。',
+    reference: '企业内部承包商管理制度',
+  },
+  {
+    id: 'P-07',
+    order: 7,
+    name: '变更管理',
+    description: '工艺、设备、人员、原料等变更前开展安全影响分析并履行审批程序。',
+    standard: '变更申请、分析、审批、告知、培训记录完整。',
+    reference: '工艺安全管理导则',
+  },
+  {
+    id: 'P-08',
+    order: 8,
+    name: '事故报告与调查',
+    description: '事故发生后按规定时限上报，组织或配合事故调查，落实整改措施。',
+    standard: '迟报瞒报漏报为零，整改措施验证闭环。',
+    reference: '《生产安全事故报告和调查处理条例》',
+  },
+]
+
+export const STORAGE_KEY = 'legal-assist-process-results'
